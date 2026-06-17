@@ -101,7 +101,7 @@ function confirmar(){
 
 
 
-    let numero = "5588994053736";
+    let numero = "558896468988";
 
 
 
