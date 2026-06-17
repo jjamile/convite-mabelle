@@ -18,57 +18,46 @@
 </head>
 
 
-
 <body>
 
 
 
-<!-- TELA DE ABERTURA -->
+<!-- TELA INICIAL -->
 
 <div id="entrada">
 
 
-<div id="entrada">
+<div class="envelope">
 
 
-<div class="abertura">
+<div class="tampa"></div>
 
 
-<div class="particulas"></div>
+<div class="conteudo-envelope">
 
 
-<p class="convite-texto">
+<p>
 Você está convidado para
 </p>
 
 
-<h1>
-Mabelle
-</h1>
+<h1>Mabelle</h1>
 
 
-<h2>
-15 anos
-</h2>
+<h2>15 anos</h2>
 
 
 <div class="linha"></div>
 
 
-<p class="frase">
-
-Uma noite especial<br>
-feita de sonhos e emoções ✨
-
+<p>
+Uma noite especial ✨
 </p>
-
 
 
 <button onclick="abrirConvite()">
 
 Abrir convite
-
-<span>✨</span>
 
 </button>
 
@@ -79,23 +68,22 @@ Abrir convite
 </div>
 
 
+</div>
+
+
+
+
 
 
 <!-- MUSICA -->
 
-
 <audio id="musica" loop preload="auto">
 
-
 <source src="assets/musica.mp3" type="audio/mp3">
-
 
 </audio>
 
 
-
-
-<!-- BOTAO MUSICA -->
 
 
 <button id="botaoMusica" onclick="controleMusica()">
@@ -109,21 +97,18 @@ Abrir convite
 
 
 
-<!-- CONTEUDO DO CONVITE -->
+
+<!-- CONVITE -->
 
 
-<div id="conteudo">
 
+<div id="convite">
 
 
 <img 
-
 src="assets/convite.png.jpeg"
-
-class="convite"
-
+class="imagem-convite"
 >
-
 
 
 
@@ -142,23 +127,16 @@ class="convite"
 
 
 <h2>
-
 Confirme sua presença
-
 </h2>
 
 
 
 
-
 <input 
-
 id="nome"
-
 placeholder="Seu nome"
-
 >
-
 
 
 
@@ -166,97 +144,41 @@ placeholder="Seu nome"
 <select id="quantidade">
 
 
-<option value="1">
+<option>1 pessoa</option>
 
-1 pessoa
+<option>2 pessoas</option>
 
-</option>
+<option>3 pessoas</option>
 
+<option>4 pessoas</option>
 
-<option value="2">
+<option>5 pessoas</option>
 
-2 pessoas
+<option>6 pessoas</option>
 
-</option>
+<option>7 pessoas</option>
 
+<option>8 pessoas</option>
 
-<option value="3">
+<option>9 pessoas</option>
 
-3 pessoas
-
-</option>
-
-
-<option value="4">
-
-4 pessoas
-
-</option>
-
-
-<option value="5">
-
-5 pessoas
-
-</option>
-
-
-<option value="6">
-
-6 pessoas
-
-</option>
-
-
-<option value="7">
-
-7 pessoas
-
-</option>
-
-
-<option value="8">
-
-8 pessoas
-
-</option>
-
-
-<option value="9">
-
-9 pessoas
-
-</option>
-
-
-<option value="10">
-
-10 pessoas
-
-</option>
+<option>10 pessoas</option>
 
 
 </select>
-
-
 
 
 
 
 <select id="resposta">
 
-
 <option>
-
 Vou comparecer
-
 </option>
 
 
 <option>
-
 Não poderei ir
-
 </option>
 
 
@@ -265,17 +187,11 @@ Não poderei ir
 
 
 
-
-
 <button onclick="confirmar()">
-
 
 Confirmar 💚
 
-
 </button>
-
-
 
 
 </div>
@@ -285,11 +201,10 @@ Confirmar 💚
 
 
 
+
 <script src="script.js"></script>
 
 
-
 </body>
-
 
 </html>
