@@ -79,7 +79,7 @@ ${resposta}
 
 window.open(
 
-"https://wa.me/5588994977253"
+"https://wa.me/" + numero
 
 +numero+
 
