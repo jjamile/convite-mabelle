@@ -13,63 +13,60 @@ margin:0;
 
 background:#006b55;
 
-color:#D4AF37;
-
 text-align:center;
+
+color:white;
 
 }
 
 
 
-
-
-/* TELA INICIAL */
+/* ABERTURA */
 
 
 #entrada{
 
-
 height:100vh;
-
 
 display:flex;
 
-
 justify-content:center;
-
 
 align-items:center;
 
-
 background:
 
-radial-gradient(circle,#00856b,#00382c);
+linear-gradient(
+
+135deg,
+
+#00382c,
+
+#006b55
+
+);
 
 
 }
 
 
 
-
-.envelope{
-
-
-position:relative;
+.caixa{
 
 
-width:340px;
+width:350px;
 
 
-height:420px;
-
-
-background:#006b55;
+padding:50px 25px;
 
 
 border:3px solid #D4AF37;
 
 
-border-radius:20px;
+border-radius:25px;
+
+
+background:#005341;
 
 
 box-shadow:
@@ -77,78 +74,15 @@ box-shadow:
 0 0 40px #D4AF37;
 
 
-overflow:hidden;
 
-
-animation:aparecer 2s;
-
+animation:aparecer 1.5s;
 
 
 }
 
 
 
-
-
-
-.tampa{
-
-
-position:absolute;
-
-
-top:0;
-
-
-left:0;
-
-
-width:100%;
-
-
-height:50%;
-
-
-background:#005341;
-
-
-clip-path:polygon(0 0,100% 0,50% 100%);
-
-
-
-transition:1.5s;
-
-
-}
-
-
-
-
-
-.envelope:hover .tampa{
-
-
-transform:translateY(-120px);
-
-
-}
-
-
-
-
-
-.conteudo-envelope{
-
-
-padding-top:90px;
-
-
-}
-
-
-
-
-.conteudo-envelope h1{
+.caixa h1{
 
 
 font-size:65px;
@@ -160,48 +94,38 @@ font-style:italic;
 color:#D4AF37;
 
 
-text-shadow:0 0 20px #D4AF37;
+text-shadow:
+
+0 0 20px #D4AF37;
 
 
 }
 
 
 
-
-.conteudo-envelope h2{
+.caixa h2{
 
 
 font-size:35px;
 
 
-color:white;
-
-
 }
-
 
 
 
 .linha{
 
 
-width:120px;
-
+width:150px;
 
 height:2px;
 
-
 background:#D4AF37;
 
-
-margin:auto;
+margin:20px auto;
 
 
 }
-
-
-
-
 
 
 
@@ -220,7 +144,7 @@ border:none;
 padding:15px 35px;
 
 
-border-radius:40px;
+border-radius:30px;
 
 
 font-size:18px;
@@ -229,59 +153,22 @@ font-size:18px;
 font-weight:bold;
 
 
-cursor:pointer;
-
-
 margin:15px;
+
+
+cursor:pointer;
 
 
 box-shadow:0 0 20px #D4AF37;
 
 
-
 }
 
 
 
 
 
-
-
-#convite{
-
-
-display:none;
-
-
-padding:20px;
-
-
-}
-
-
-
-
-
-.imagem-convite{
-
-
-width:95%;
-
-
-max-width:500px;
-
-
-border-radius:15px;
-
-
-animation:abrir 1.5s;
-
-
-}
-
-
-
-
+/* MUSICA */
 
 
 #botaoMusica{
@@ -307,6 +194,40 @@ z-index:999;
 
 
 
+/* CONVITE */
+
+
+#convite{
+
+
+display:none;
+
+
+padding:20px;
+
+
+}
+
+
+
+.imagem-convite{
+
+
+width:95%;
+
+
+max-width:500px;
+
+
+border-radius:15px;
+
+
+animation:aparecer 1s;
+
+
+}
+
+
 
 input,select{
 
@@ -317,13 +238,13 @@ display:block;
 margin:15px auto;
 
 
-padding:15px;
-
-
 width:80%;
 
 
 max-width:350px;
+
+
+padding:15px;
 
 
 border-radius:10px;
@@ -334,63 +255,23 @@ border-radius:10px;
 
 
 
-
 @keyframes aparecer{
 
 
 from{
 
-
 opacity:0;
 
-
-transform:scale(.5);
-
+transform:scale(.7);
 
 }
 
 
 to{
 
-
 opacity:1;
 
-
 transform:scale(1);
-
-
-}
-
-
-}
-
-
-
-
-
-@keyframes abrir{
-
-
-from{
-
-
-opacity:0;
-
-
-transform:scale(.8);
-
-
-}
-
-
-to{
-
-
-opacity:1;
-
-
-transform:scale(1);
-
 
 }
 
