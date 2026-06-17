@@ -7,11 +7,20 @@ function abrirConvite(){
     document.getElementById("conteudo").style.display = "block";
 
 
-
     let musica = document.getElementById("musica");
 
 
-    musica.play();
+    musica.play()
+    .then(() => {
+
+        console.log("Música tocando");
+
+    })
+    .catch(() => {
+
+        console.log("Erro ao iniciar música");
+
+    });
 
 
 
@@ -41,7 +50,7 @@ function controleMusica(){
         botao.innerHTML = "🔊 Música ON";
 
 
-    }else{
+    } else {
 
 
         musica.pause();
@@ -79,21 +88,24 @@ function abrirMapa(){
 function confirmar(){
 
 
-let nome = document.getElementById("nome").value;
+    let nome =
+    document.getElementById("nome").value;
 
 
-let quantidade = document.getElementById("quantidade").value;
+    let quantidade =
+    document.getElementById("quantidade").value;
 
 
-let resposta = document.getElementById("resposta").value;
-
-
-
-let numero = "5588994977253";
+    let resposta =
+    document.getElementById("resposta").value;
 
 
 
-let mensagem = 
+    let numero = "5588994977253";
+
+
+
+    let mensagem = 
 `Olá! 💚✨
 
 Confirmação do aniversário da Mabelle - 15 anos
@@ -110,15 +122,15 @@ ${resposta}
 
 
 
-let link = 
-"https://wa.me/" 
-+ numero 
-+ "?text=" 
-+ encodeURIComponent(mensagem);
+    let link =
+    "https://wa.me/" 
+    + numero 
+    + "?text=" 
+    + encodeURIComponent(mensagem);
 
 
 
-window.open(link, "_blank");
+    window.open(link, "_blank");
 
 
 }
