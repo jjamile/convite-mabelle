@@ -1,68 +1,21 @@
-function abrirConvite(){
-
-
-document.getElementById("entrada")
-.style.display="none";
-
-
-document.getElementById("conteudo")
-.style.display="block";
-
-
-document.getElementById("musica")
-.play();
-
-
-}
-
-
-
-
-
-function abrirMapa(){
-
-
-window.open(
-
-"https://maps.google.com/?q=Chácara+Oásis+Quixeramobim"
-
-);
-
-
-}
-
-
-
-
-
 function confirmar(){
 
 
-let nome =
-document.getElementById("nome").value;
+let nome = document.getElementById("nome").value;
 
+let quantidade = document.getElementById("quantidade").value;
 
-let quantidade =
-document.getElementById("quantidade").value;
-
-
-
-let resposta =
-document.getElementById("resposta").value;
+let resposta = document.getElementById("resposta").value;
 
 
 
-
-let numero="5588994977253";
-
+let numero = "5588994977253";
 
 
-let mensagem=
+let mensagem = 
+`Olá! 💚✨
 
-`
-Olá! 💚✨
-
-Confirmação do aniversário da Mabelle 15 anos
+Confirmação do aniversário da Mabelle - 15 anos
 
 Nome:
 ${nome}
@@ -72,23 +25,15 @@ ${quantidade}
 
 Resposta:
 ${resposta}
-
 `;
 
 
 
-window.open(
-
-"https://wa.me/" + numero
-
-+numero+
-
-"?text="
-
-+encodeURIComponent(mensagem)
-
-);
+let link = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensagem);
 
 
 
-}s
+window.open(link, "_blank");
+
+
+}
